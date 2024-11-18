@@ -1,0 +1,68 @@
+<div class="dashboard-container">
+    <div nz-row class="dashboard-header">
+        <h1>Dashboard</h1>
+    </div>
+
+    <div nz-row gutter="24" class="dashboard-row">
+        <div nz-col [nzXs]="24" [nzSm]="12" [nzMd]="8" [nzLg]="6">
+            <nz-card nzTitle="Total Calories Burned" class="dashboard-card">
+                <i nz-icon nzType="fire" nzTheme="twotone" class="card-icons"></i>
+                <p class="card-value">{{ statsData?.totalCaloriesBurned }} cal</p>
+            </nz-card>
+        </div>
+        
+        <div nz-col [nzXs]="24" [nzSm]="12" [nzMd]="8" [nzLg]="6">
+            <nz-card nzTitle="Total Distance Covered" class="dashboard-card">
+                <i nz-icon nzType="environment" nzTheme="twotone" class="card-icons"></i>
+                <p class="card-value">{{ statsData?.distance | number:'1.1-1' }} Km</p>
+            </nz-card>
+        </div>
+        
+        <div nz-col [nzXs]="24" [nzSm]="12" [nzMd]="8" [nzLg]="6">
+            <nz-card nzTitle="Total Steps Taken" class="dashboard-card">
+                <i nz-icon nzType="dashboard" nzTheme="twotone" class="card-icons"></i>
+                <p class="card-value">{{ statsData?.steps }} steps</p>
+            </nz-card>
+        </div>
+        
+        <div nz-col [nzXs]="24" [nzSm]="12" [nzMd]="8" [nzLg]="6">
+            <nz-card nzTitle="Total Time Spent" class="dashboard-card">
+                <i nz-icon nzType="clock-circle" nzTheme="twotone" class="card-icons"></i>
+                <p class="card-value">{{ statsData?.duration }} min</p>
+            </nz-card>
+        </div>
+    </div>
+
+    <div nz-row gutter="24" class="dashboard-row">
+        <div nz-col [nzXs]="24" [nzSm]="12" [nzMd]="8" [nzLg]="6">
+            <nz-card nzTitle="Achieved Goals" class="dashboard-card achieved-goals">
+                <i nz-icon nzType="check-circle" nzTheme="outline" class="card-icon"></i>
+                <p class="card-value">{{ statsData?.achievedGoals }}</p>
+            </nz-card>
+        </div>
+        
+        <div nz-col [nzXs]="24" [nzSm]="12" [nzMd]="8" [nzLg]="6">
+            <nz-card nzTitle="Not Achieved Goals" class="dashboard-card not-achieved-goals">
+                <i nz-icon nzType="close-circle" nzTheme="outline" class="card-icon"></i>
+                <p class="card-value">{{ statsData?.notAchievedGoals }}</p>
+            </nz-card>
+        </div>
+    </div>
+
+    <!-- Separated section for charts -->
+    <div class="dashboard-chart-section">
+        <div nz-row gutter="24">
+            <div nz-col [nzXs]="30" [nzMd]="11" class="chart-card">
+                <nz-card nzTitle="Recent Workouts" class="height">
+                    <canvas #workoutLineChart></canvas>
+                </nz-card>
+            </div>
+            
+            <div nz-col [nzXs]="30" [nzMd]="11" class="chart-card">
+                <nz-card nzTitle="Recent Activities" class="height">
+                    <canvas #activityLineChart></canvas>
+                </nz-card>
+            </div>
+        </div>
+    </div>
+</div>

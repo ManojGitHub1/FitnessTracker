@@ -1,0 +1,68 @@
+.layout {
+  min-height: 100vh;
+}
+
+.header {
+  background-color: #001529;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #002140;
+  color: white;
+}
+
+.avatar {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.user-info {
+  color: white;
+  font-weight: bold;
+}
+
+.home-content {
+  padding: 20px;
+  background: #f0f2f5;
+}
+
+.home-card {
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.features-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.features-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.features-list span {
+  margin-right: 10px;
+  color: #52c41a;
+}
+
+.start-button {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.start-button button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+}

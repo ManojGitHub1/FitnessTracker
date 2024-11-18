@@ -1,0 +1,43 @@
+.dashboard-container {
+    /* ... other styles ... */
+
+    .dashboard-row {
+        margin-bottom: 20px;
+
+        .dashboard-card {
+            /* ... other styles ... */
+            margin-right: 10px; /* Add right margin for spacing */
+            margin-left: 10px; /* Add left margin for spacing */
+
+            &:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 15px rgba(0, 123, 255, 0.3);
+            background: linear-gradient(145deg, #ffffff, #e6f7ff);
+            }
+        }
+    }
+
+    .achieved-goals .card-icon {
+        color: #52c41a; /* Green for achieved */
+    }
+
+    .not-achieved-goals .card-icon {
+        color: #ff4d4f; /* Red for not achieved */
+    }
+
+    .dashboard-chart-section {
+        margin-top: 24px;
+        margin-left: 10px;
+        margin-right: 10px;
+    
+        .chart-card {
+            height: 200px; /* Increase the height */
+            width: 100%; /* Set width to full container width */
+        }
+
+        .height {
+            height: 360px;
+            width: 100%;
+        }
+    }
+}

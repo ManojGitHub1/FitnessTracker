@@ -1,0 +1,52 @@
+<nz-layout class="layout">
+  <nz-sider>
+    <div class="logo">
+      <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.LCPqCHLrapY1qwxK9nlz1AHaHa%26pid%3DApi%26h%3D160&f=1&ipt=4f785ac31fb8d7087782ed349d4206b2dc02c02e77c8ae567b9ec80140264123&ipo=images" 
+      alt="Avatar" class="avatar">
+      <div class="user-info">
+        <strong>Manoj Jivanagi</strong>
+      </div>
+    </div>
+
+    <ul nz-menu nzTheme="dark" nzMode="inline">
+
+      <li nz-menu-item routerLink="/">
+        <span nz-icon nzType="home"></span>
+        <span>Home</span>
+      </li>
+      
+      <li nz-menu-item routerLink="/dashboard">
+        <span nz-icon nzType="dashboard"></span>
+        <span>Dashboard</span>
+      </li>
+
+      <li nz-menu-item routerLink="/workout">
+        <span nz-icon nzType="split-cells"></span>
+        <span>Workout</span>
+      </li>
+
+      <li nz-menu-item routerLink="/activity">
+        <span nz-icon nzType="control"></span>
+        <span>Activity</span>
+      </li>
+
+      <li nz-menu-item routerLink="/goal">
+        <span nz-icon nzType="fund"></span>
+        <span>Goal</span>
+      </li>
+    </ul>
+
+  </nz-sider>
+
+  <nz-layout class="right-layout">
+    <nz-content>
+      <div class="inner-content">
+        <router-outlet></router-outlet>
+
+      </div>
+    </nz-content>
+
+  </nz-layout>
+
+
+</nz-layout>
